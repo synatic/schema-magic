@@ -2,26 +2,52 @@
   "name": "schema-magic",
   "version": "0.0.8",
   "description": "JSON Schema Utilities",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/synatic/schema-magic.git"
+  },
+  "keywords": [
+    "json"
+  ],
   "author": {
-    "name": "Martin Naude",
-    "email": "martin@cysonius.com"
+    "name": "FilePounder Inc",
+    "url": "https://filepounder.com"
+  },
+  "contributors": [
+    {
+      "name": "Martin Naude",
+      "email": "martin@filepounder.com"
+    },
+    {
+      "name": "Thiren Bunsee",
+      "email": "thiren@filepounder.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/synatic/schema-magic/issues"
+  },
+  "homepage": "https://github.com/synatic/schema-magic#readme",
+  "engines": {
+    "node": ">=6.0.0"
   },
   "dependencies": {
-    "ajv": "6.10.0",
-    "ajv-keywords": "3.4.0",
-    "bson-objectid": "1.2.5",
-    "check-types": "8.0.2",
-    "cron-parser": "2.11.0",
+    "ajv": "6.10.2",
+    "ajv-keywords": "3.4.1",
+    "bson-objectid": "1.3.0",
+    "check-types": "10.0.0",
+    "cron-parser": "2.13.0",
     "deepcopy": "2.0.0",
-    "json-magic": "0.0.8",
+    "json-magic": "0.0.10",
     "moment": "2.24.0",
-    "moment-timezone": "0.5.25",
-
+    "moment-timezone": "0.5.26",
     "type-magic": "0.0.2",
     "underscore": "1.9.1",
     "underscore.string": "3.3.5"
   },
-  "engines": {
-    "node": ">=6.0.0"
+  "devDependencies": {
+    "mocha": "^6.2.0"
   }
 }
