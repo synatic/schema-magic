@@ -1,0 +1,27 @@
+{
+  "name": "schema-magic",
+  "version": "0.0.8",
+  "description": "JSON Schema Utilities",
+  "author": {
+    "name": "Martin Naude",
+    "email": "martin@cysonius.com"
+  },
+  "dependencies": {
+    "ajv": "6.10.0",
+    "ajv-keywords": "3.4.0",
+    "bson-objectid": "1.2.5",
+    "check-types": "8.0.2",
+    "cron-parser": "2.11.0",
+    "deepcopy": "2.0.0",
+    "json-magic": "0.0.8",
+    "moment": "2.24.0",
+    "moment-timezone": "0.5.25",
+
+    "type-magic": "0.0.2",
+    "underscore": "1.9.1",
+    "underscore.string": "3.3.5"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}

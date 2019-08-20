@@ -1,0 +1,41 @@
+[
+  {
+    "type":"string",
+    "sqlType":"varchar(255)"
+  },
+  {
+    "type":"integer",
+    "sqlType":"int"
+  },
+  {
+    "type":"boolean",
+    "sqlType":"bit"
+  },
+  {
+    "type":"string",
+    "format":"date-time",
+    "sqlType":"datetime"
+
+  },
+  {
+    "type":"string",
+    "format":"date",
+    "sqlType":"date"
+
+  },
+  {
+    "type":"array",
+    "sqlType":"varchar(255)"
+
+  },
+  {
+    "type":"object",
+    "sqlType":"varchar(255)"
+
+  },
+  {
+    "type":"null",
+    "sqlType":"varchar(255)"
+
+  }
+]
