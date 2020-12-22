@@ -1,3 +1,3 @@
 # Schema Magic
 
-JSON Schema utilities 
+JSON Schema utilities
