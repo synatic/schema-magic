@@ -50,7 +50,7 @@
     "check-types": "11.1.2",
     "clone-deep": "4.0.1",
     "cron-parser": "2.18.0",
-    "jsonpath-plus": "4.0.0",
+    "jsonpath-plus": "5.0.3",
     "moment": "2.29.1",
     "moment-timezone": "0.5.32",
     "underscore": "1.12.0",
