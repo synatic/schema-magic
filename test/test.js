@@ -365,7 +365,7 @@ describe('Schema Magic', function () {
     describe('JSON Generate', function () {
         it('generate a simple schema', function () {
             assert.deepEqual(SchemaMagic.generateSchemaFromJSON(null), {type: 'null'}, 'Invalid schema generate');
-            assert.deepEqual(SchemaMagic.generateSchemaFromJSON('abc'), {type: 'string'}, 'Invalid schema generate');
+            assert.deepEqual(SchemaMagic.generateSchemaFromJSON('abc'), {type: 'string',stringLength:3}, 'Invalid schema generate');
             assert.deepEqual(SchemaMagic.generateSchemaFromJSON(1), {type: 'integer'}, 'Invalid schema generate');
             assert.deepEqual(
                 SchemaMagic.generateSchemaFromJSON(new Date()),
@@ -434,6 +434,7 @@ describe('Schema Magic', function () {
                     },
                     name: {
                         type: 'string',
+                        stringLength:16
                     },
                     price: {
                         type: 'number',
@@ -442,6 +443,7 @@ describe('Schema Magic', function () {
                         type: 'array',
                         items: {
                             type: 'string',
+                            stringLength:4
                         },
                     },
                     dimensions: {
