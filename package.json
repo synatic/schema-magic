@@ -46,7 +46,7 @@
     "@synatic/type-magic": "^1.0.0",
     "ajv": "6.12.6",
     "ajv-keywords": "3.5.2",
-    "bson-objectid": "2.0.1",
+    "bson-objectid": "2.0.2",
     "check-types": "11.1.2",
     "clone-deep": "4.0.1",
     "cron-parser": "3.5.0",
