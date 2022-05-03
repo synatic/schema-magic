@@ -12,16 +12,20 @@ on:
         description: "Reason"
         required: true
 
+concurrency:
+  group: build
+
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
 
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 14
           registry-url: https://registry.npmjs.org/
       # Skip post-install scripts here, as a malicious
       # script could steal NODE_AUTH_TOKEN.
@@ -40,10 +44,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 14
           registry-url: https://registry.npmjs.org/
       # Skip post-install scripts here, as a malicious
       # script could steal NODE_AUTH_TOKEN.
