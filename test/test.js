@@ -2415,7 +2415,7 @@ describe('Schema Magic', function () {
             assert.deepEqual(invalid, null, 'Invalid objectid validate');
         });
 
-        it('check an ivalid objectid', function () {
+        it('check an invalid objectid', function () {
             const invalid = SchemaMagic.validate(
                 {
                     val: '58c246244d18c88838c67f',
@@ -2432,7 +2432,7 @@ describe('Schema Magic', function () {
             assert(invalid, 'Invalid objectid validate');
         });
 
-        it('check an ivalid objectid when null', function () {
+        it('check an invalid objectid when null', function () {
             const invalid = SchemaMagic.validate(
                 {
                     val: null,
@@ -2465,7 +2465,7 @@ describe('Schema Magic', function () {
             assert(!invalid, 'Invalid cron validate');
         });
 
-        it('check an ivalid cron', function () {
+        it('check an invalid cron', function () {
             const invalid = SchemaMagic.validate(
                 {
                     val: '0 0 * * x x x',
@@ -2499,7 +2499,7 @@ describe('Schema Magic', function () {
             assert(!invalid, 'Invalid timezone validate');
         });
 
-        it('check an ivalid timezone', function () {
+        it('check an invalid timezone', function () {
             const invalid = SchemaMagic.validate(
                 {
                     val: 'America/xxxx',
