@@ -51,7 +51,7 @@
     "clone-deep": "4.0.1",
     "cron-parser": "4.4.0",
     "jsonpath-plus": "6.0.1",
-    "moment": "2.29.3",
+    "moment": "2.29.4",
     "moment-timezone": "0.5.34",
     "underscore": "1.13.4",
     "underscore.string": "3.3.6"
