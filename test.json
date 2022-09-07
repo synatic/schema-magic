@@ -1,0 +1,1666 @@
+
+  {
+    "PolicyRs": {
+      "xmlns": "http://www.acord.org/schema/PC/xml/2",
+      "BusinessPurposeTypeCd": "RWL",
+      "TransactionEffectiveDt": "2022-08-18T00:00:00.000",
+      "SourceSystem": {
+        "id": "S52ECC13CD09C4E269A25F8EAD0775708",
+        "SourceSystemCd": "WB",
+        "SourceSystemQualifierCd": "LR"
+      },
+      "TransactionSeqNumber": 1,
+      "Policy": {
+        "id": "P2952F1FC6DD448028FF8B0E8A3B6B625",
+        "PolicyNumber": "B646788",
+        "PolicyVersion": "01",
+        "CompanyProductCd": 801,
+        "BroadLOBCd": 1,
+        "NAICCd": 15350,
+        "ControllingStateProvCd": "AZ",
+        "ContractTerm": {
+          "id": "C6F295015657F4DC6BD9F0BCFCA9E01B2",
+          "EffectiveDt": "2022-08-18",
+          "ExpirationDt": "2023-08-18"
+        },
+        "CustomerServicingCd": "AGY",
+        "GroupId": "DE",
+        "NumLosses": "0",
+        "OtherOrPriorPolicy": {
+          "id": "O52DC7AFF089F423D8131F7668AB34E27",
+          "DriverRef": "DRV2",
+          "PolicyCd": "RecentOt",
+          "ContractTerm": {
+            "id": "C3D0DC139A1FA49BD9A06E1AE1C6BDFAD",
+            "ExpirationDt": "2020-06-01"
+          },
+          "LengthTimeWithPreviousInsurer": {
+            "id": "L807B0D5C50C448D893E729FE46E2DD2E",
+            "NumUnits": 12
+          },
+          "Coverage": {
+            "id": "BIBI",
+            "CoverageCd": "BI",
+            "Limit": [
+              {
+                "id": "LIMBIBIBIEachPers",
+                "FormatCurrencyAmt": {
+                  "id": "FCLIMBIBIBIEachPers",
+                  "Amt": 10000
+                },
+                "LimitAppliesToCd": "BIEachPers"
+              },
+              {
+                "id": "LIMBIBIPerAcc",
+                "FormatCurrencyAmt": {
+                  "id": "FCLIMBIBIPerAcc",
+                  "Amt": 10000
+                },
+                "LimitAppliesToCd": "PerAcc"
+              }
+            ],
+            "EffectiveDt": "2022-08-18",
+            "ExpirationDt": "2023-08-18",
+            "ProRateFactor": 1,
+            "CoverageSupplement": {
+              "id": "CC902E8D636C743769CE4F0B95EB9253E",
+              "CoverageSubCd": "BI"
+            }
+          },
+          "OtherOrPriorPolicyExt": {
+            "id": "O279BC08B8BB648D193B5D80B9151B1AD",
+            "WBPriorCarrierInceptionDt": "2019-06-01",
+            "WBRecordInfo": {
+              "id": "WBE1AD8689BE64EDABA51152F9013CD1C",
+              "WBRecordModifyInd": "0",
+              "WBRecordModifyType": "O",
+              "WBRecordSource": "MANUAL"
+            },
+            "WBPriorCarrierGroupName": "Admiral Group",
+            "WBInsLapseCheckInd": 1,
+            "WBPriorBIRatingRange": "Low",
+            "WBPriorCarrierGroupCode": "0003"
+          }
+        },
+        "PaymentOption": {
+          "id": "P0C1ABEC3685146C9A7832B523A4A0FD6",
+          "PaymentPlanCd": "QT",
+          "PaymentOptionExt": {
+            "id": "P908D863FB9C844DF9A946C0BF43CDBC8",
+            "WBDepositInfo": {
+              "id": "W2E1DFCDC3916404D95CE298AF6D6BFCF",
+              "DepositAmt": {
+                "id": "D58DD9B8EF2034E9582BDB14B21AA35EC",
+                "Amt": 10
+              }
+            },
+            "WBDepositInd": 1
+          }
+        },
+        "QuoteInfo": {
+          "id": "QE08A454F07D14C3AA4AFE72A1C9F6D94",
+          "InitialQuoteRequestDt": "2021-08-19"
+        },
+        "CreditScoreInfo": [
+          {
+            "id": "CDA3C4861FEE24683B371E084E7CB4898",
+            "CreditScore": 800,
+            "CSPolicyTypeCd": "Auto",
+            "CreditScoreInfoExt": {
+              "id": "C0DB4BDABD14C4097A1494A8CF3407634",
+              "WBInsuranceScore": {
+                "id": "WC7998A1AB0664EDD979ABBF47BC992EE",
+                "WBRatingScore": 800,
+                "WBRatingScoreOverrideInd": 1,
+                "WBRatingScoreOverride": 800,
+                "WBCappedReasonCd": "N",
+                "WBRemark": {
+                  "id": "W45414CB5AB294B9D9AE49C9B62D99E67",
+                  "WBMessage": "Testing",
+                  "WBMessageDt": "2021-08-18T21:40:09.375",
+                  "WBUserId": "Test Pl"
+                }
+              }
+            },
+            "CreditScoreDt": null
+          },
+          {
+            "id": "CC38A3E089F8946248B7C0B0413FCCEC2",
+            "CreditScore": 800,
+            "CreditScoreDt": "2021-08-18",
+            "CSPolicyTypeCd": "Lowest",
+            "CreditScoreInfoExt": {
+              "id": "C7F4B8AD51C3D4D2AAB0736756EAE82E0",
+              "WBInsuranceScore": {
+                "id": "WA0370DFA308C44BAB3287DDFCF0C383B"
+              }
+            }
+          }
+        ],
+        "QuestionAnswer": {
+          "id": "QAWBPackageOverrideIndNO",
+          "QuestionCd": "WBPackageOverrideInd",
+          "YesNoCd": "NO"
+        },
+        "PolicyStatusCd": "InForce",
+        "RenewalStatusCd": "ManualRenew",
+        "UnderwritingDecisionInfo": {
+          "id": "UA863D507EFA842C88F4EB1BF767C4963",
+          "SystemUnderwritingDecisionDt": "2021-08-19",
+          "UnderwritingScoreNumber": "0",
+          "UnderwritingDecisionInfoExt": {
+            "id": "U248DE845A1714C90BBBF1B53D209091B",
+            "WBUpdatedCumulativeScore": "0"
+          }
+        },
+        "OriginalPolicyInceptionDt": "2021-08-18",
+        "PaidInFullInd": "0",
+        "Producer": [
+          {
+            "id": "PRODAgency",
+            "Relationship": {
+              "id": "R04A61AA08F784E7B8783D94D836FB977",
+              "RelationshipToCd": "Agency"
+            },
+            "Name": "R & R INSURANCE SERVICES INC",
+            "Addr": {
+              "id": "A551A1005FFAE43E0821EFF9D9899F33D",
+              "AddrTypeCd": "MailingAddress",
+              "Addr1": "321 CLINTON ST",
+              "City": "KEWASKUM",
+              "StateProvCd": "WI",
+              "PostalCode": 53040,
+              "CountryCd": "USA",
+              "County": "US"
+            },
+            "Communications": {
+              "id": "C11F8C1DB9EED4D8AB7F27111EEC89D1B",
+              "PhoneTypeCd": "HOME",
+              "PhoneNumber": "262-574-7000"
+            },
+            "ContractNumber": 48508,
+            "ProducerSubCode": null
+          },
+          {
+            "id": "PRODUSERIN",
+            "Relationship": {
+              "id": "RD541D77CD94A4A73810A942BC5F34535",
+              "RelationshipToCd": "USERIN"
+            },
+            "Name": "Joyner Producer",
+            "ProducerSubCode": 20371
+          },
+          {
+            "id": "PRODPROD",
+            "Relationship": {
+              "id": "R4BC27673A4AD471EA0EBA7256B0C0A8D",
+              "RelationshipToCd": "PROD"
+            },
+            "Name": "Joyner Producer",
+            "ProducerSubCode": 20371
+          }
+        ],
+        "InsuredOrPrincipal": {
+          "id": "I78CB8F7371DB45A4B42D2DFA47C4BE1E",
+          "ItemIdInfo": {
+            "id": "I60004082C74A4AF4BA7890E0B6359106",
+            "InsurerId": 1000763204
+          },
+          "Relationship": {
+            "id": "R6C82FB24D72A49119C0EEB92819656B7",
+            "RelationshipToRef": "P2952F1FC6DD448028FF8B0E8A3B6B625",
+            "RelationshipToCd": "FNI"
+          },
+          "Name": "Automated UI LiferayTest",
+          "CreditScoreInfo": [
+            {
+              "id": "CB494568F1BDB4EBCA93EE0E701077890",
+              "CreditScore": "0",
+              "CreditScoreDt": "2021-08-18",
+              "CSPolicyTypeCd": "Auto"
+            },
+            {
+              "id": "C275B5688466C455F85673ACE088C6B62",
+              "ReferenceNumber": 12312312311234,
+              "CreditScore": 800,
+              "CreditScoreDt": "2021-01-20",
+              "CSPolicyTypeCd": "Auto",
+              "CreditScoreInfoExt": {
+                "id": "C66B9BFF85BF943ECA2637CAB3AE5BDDB",
+                "WBInsuranceScore": {
+                  "id": "W769FE92836B34DF6B5C8DDAD4E3A6774",
+                  "WBRatingScoreOverrideInd": 1,
+                  "WBRemark": {
+                    "id": "W4EF4CC9DE97C41DC8AB938485F958EB5",
+                    "WBMessageDt": "2021-08-18T21:40:09.379",
+                    "WBUserId": "Test Pl",
+                    "WBMessageTypeCd": "CS"
+                  }
+                },
+                "WBThirdPartyNCF": {
+                  "id": "W935A79D5F78D48EB9B8CF5AB6EFCF86D",
+                  "WBCreditScoreReason": {
+                    "id": "W0AA8202DC7674C1D88060D206FF8504B",
+                    "WBCreditScoreReasonCd": 3001,
+                    "WBCreditScoreReasonDesc": "# of Open Auto Financing Accounts is 1. Zero Open Auto Financing Accounts is Better"
+                  }
+                },
+                "WBRecordInfo": {
+                  "id": "WF3974D1FB35A4EF6A8DE8588781C48CB",
+                  "WBRecordSource": "MANUAL"
+                }
+              }
+            }
+          ],
+          "Addr": [
+            {
+              "id": "A144FB8269D81409AA2A1D2E7A9617F12",
+              "AddrTypeCd": "InsuredsAddress",
+              "Addr1": "3721 E Thomas Rd",
+              "City": "Phoenix",
+              "StateProvCd": "AZ",
+              "PostalCode": "85018-7507",
+              "CountryCd": "USA",
+              "Latitude": 33.4803,
+              "Longitude": -112.001508,
+              "County": "Maricopa County",
+              "AddrExt": {
+                "id": "ABB6FF7ADF0DB4A3A8CA1298B438C787C",
+                "WBAddressStandardization": {
+                  "id": "WE0E3A099A7F048E48E1A491006BAFC23",
+                  "WBAddrStandardizeStreetName": "Thomas",
+                  "WBAddrStandardizeStreetTypeCd": "Rd",
+                  "WBAddrStandardizeStreetNumber": 3721,
+                  "WBConfidence": 100,
+                  "WBAddrStandardizeLeadingDirectional": "E",
+                  "WBAddrStandardizeStatus": "Accepted"
+                }
+              }
+            },
+            {
+              "id": "A47CB677A579A4293957BB2A799946DD4",
+              "AddrTypeCd": "MailingAddress",
+              "Addr1": "3721 E Thomas Rd",
+              "City": "Phoenix",
+              "StateProvCd": "AZ",
+              "PostalCode": "85018-7507",
+              "CountryCd": "USA",
+              "Latitude": 33.4803,
+              "Longitude": -112.001508,
+              "County": "Maricopa County",
+              "AddrExt": {
+                "id": "A485C3DB5551B45119EF783CCA5FB2BD8",
+                "WBAddressStandardization": {
+                  "id": "W2C3C80C21A1E4EAB8EF5D535A19D03C0",
+                  "WBAddrStandardizeStreetName": "Thomas",
+                  "WBAddrStandardizeStreetTypeCd": "Rd",
+                  "WBAddrStandardizeStreetNumber": 3721,
+                  "WBConfidence": 100,
+                  "WBAddrStandardizeLeadingDirectional": "E",
+                  "WBAddrStandardizeStatus": "Accepted"
+                }
+              },
+              "Addr2": null
+            },
+            {
+              "id": "A91ACA53C9D29415CB9B5E821975E471B",
+              "AddrTypeCd": "BillingAddress"
+            }
+          ],
+          "Communications": {
+            "id": "CA840F4BF07CD4615842895C142F3B135",
+            "CommunicationUseCd": "Alternate",
+            "PhoneTypeCd": "Cell",
+            "PhoneNumber": 2483658160,
+            "EmailAddr": "TestingPolicy@WBMI.com"
+          },
+          "Surname": "LiferayTest",
+          "GivenName": "Automated",
+          "OtherGivenName": "UI",
+          "TitlePrefix": "Dr.",
+          "NameSuffix": "Sr.",
+          "GenderCd": "M",
+          "BirthDt": "1988-02-02",
+          "MaritalStatusCd": "S",
+          "OccupationClassCd": "ACT",
+          "InsuredOrPrincipalExt": {
+            "id": "IC07EE4A1467B4993871195A6167651DB",
+            "WBRiskTerm": {
+              "id": "W2A791BC714C341AC8EC65E1F41AA4ABA",
+              "WBRiskEffectiveDt": "2022-08-18",
+              "WBRiskExpirationDt": "2023-08-18"
+            }
+          }
+        },
+        "PersAutoLineBusiness": {
+          "id": "PersAutoLineBusiness",
+          "CompanyProductCd": 850,
+          "Coverage": {
+            "id": "ROADTLN",
+            "CoverageCd": "ROAD",
+            "Limit": {
+              "id": "LIMROADTLNPerOcc",
+              "FormatCurrencyAmt": {
+                "id": "FCLIMROADTLNPerOcc",
+                "Amt": 100
+              },
+              "LimitAppliesToCd": "PerOcc"
+            },
+            "EffectiveDt": "2022-08-18",
+            "ExpirationDt": "2023-08-18",
+            "ProRateFactor": 1,
+            "CoverageSupplement": {
+              "id": "C0D3FF1EF3DF845AEAE39BE357054B68D",
+              "CoverageSubCd": "TLN"
+            },
+            "CoverageExt": {
+              "id": "C034E2D52A9A54C44BB1A121F1EC1375D",
+              "WBOnsetOffsetPremiumInfo": {
+                "id": "W4C26F987AA5A4E6A8FB4F164769C9B15",
+                "WBCurrentTermOnsetAmt": {
+                  "id": "W7EF15A72F76442D0B53C08EF8A526877",
+                  "Amt": 20
+                },
+                "WBCurrentTermOffsetAmt": {
+                  "id": "W36308D1A69C94407A8A76C9030330D28",
+                  "Amt": "0"
+                }
+              },
+              "WBPremiumInfo": {
+                "id": "W2CB49079259942B987F6EFB32AD9D717",
+                "WBCurrentTermAmt": {
+                  "id": "W82226F0E4FF14FFCAFD92FB692DDE8E6",
+                  "Amt": 20
+                },
+                "WBNetChangeAmt": {
+                  "id": "WAB290B0ACF0148918E6C5052837C58E8",
+                  "Amt": 20
+                },
+                "WBWrittenAmt": {
+                  "id": "WD87B0986C1A440C1BA8BB43B179E305B",
+                  "Amt": 20
+                },
+                "WBPriorCurrentTermAmt": {
+                  "id": "W182ABBB5F3044065B70D65B401AC7A77",
+                  "Amt": "0"
+                },
+                "WBPriorWrittenAmt": {
+                  "id": "WD39A282357BE417885B4480EC939E546",
+                  "Amt": "0"
+                },
+                "WBCancelAmt": {
+                  "id": "WD3455C9E8DD84E9C87A9B64E2A81097A",
+                  "Amt": "0"
+                }
+              }
+            }
+          },
+          "Driver": {
+            "id": "DRV2",
+            "ItemIdInfo": {
+              "id": "IE72C0715DE6F42C4B15115FB34C4AF04",
+              "InsurerId": 2
+            },
+            "Relationship": [
+              {
+                "id": "R6BF528BC6DA848658007CEE9CFE8462E",
+                "RelationshipToRef": "I78CB8F7371DB45A4B42D2DFA47C4BE1E",
+                "RelationshipToCd": "IN"
+              },
+              {
+                "id": "RelationshipD2V1",
+                "RelationshipToRef": "V81D3BD5BF2F849C4BC546B8B2BCD7776",
+                "RelationshipToCd": "DRV",
+                "RelationshipDesc": "PRINCIPAL"
+              }
+            ],
+            "License": {
+              "id": "LB05D7EF6032946A996E0851B812B0940",
+              "LicenseTypeCd": "Driver",
+              "LicenseStatusCd": "VALID",
+              "LicensedDt": "2017-11-11",
+              "LicensePermitNumber": "S7G7C49V3333",
+              "StateProvCd": "IL"
+            },
+            "Addr": [
+              {
+                "id": "A1E701B39411A45808741F2534D30B2C2",
+                "AddrTypeCd": "InsuredsAddress",
+                "Addr1": "3721 E Thomas Rd",
+                "City": "Phoenix",
+                "StateProvCd": "AZ",
+                "PostalCode": "85018-7507",
+                "CountryCd": "USA",
+                "Latitude": 33.4803,
+                "Longitude": -112.001508,
+                "County": "Maricopa County",
+                "Region": 23,
+                "AddrExt": {
+                  "id": "A2CA11968FB6146929D4809209272348D",
+                  "WBAddressStandardization": {
+                    "id": "W6EF4E8F0E8324F4EB8D3B5D1E30F6A3B",
+                    "WBAddrStandardizeStreetName": "Thomas",
+                    "WBAddrStandardizeStreetTypeCd": "Rd",
+                    "WBAddrStandardizeStreetNumber": 3721,
+                    "WBConfidence": 100,
+                    "WBAddrStandardizeLeadingDirectional": "E",
+                    "WBAddrStandardizeStatus": "Accepted"
+                  }
+                }
+              },
+              {
+                "id": "ADD5403A0B3F44E3C864ACBC6AA6FF8B5",
+                "AddrTypeCd": "MailingAddress",
+                "Addr1": "3721 E Thomas Rd",
+                "City": "Phoenix",
+                "StateProvCd": "AZ",
+                "PostalCode": "85018-7507",
+                "CountryCd": "USA",
+                "Latitude": 33.4803,
+                "Longitude": -112.001508,
+                "County": "Maricopa County",
+                "AddrExt": {
+                  "id": "AD2D2AE05F7114AA38AD81D7F11E0AF08",
+                  "WBAddressStandardization": {
+                    "id": "WC2AFE7CDDE0A44BD92DB540E970AB56F",
+                    "WBAddrStandardizeStreetName": "Thomas",
+                    "WBAddrStandardizeStreetTypeCd": "Rd",
+                    "WBAddrStandardizeStreetNumber": 3721,
+                    "WBConfidence": 100,
+                    "WBAddrStandardizeLeadingDirectional": "E",
+                    "WBAddrStandardizeStatus": "Accepted"
+                  }
+                }
+              },
+              {
+                "id": "A53203C3452F243C081B62E85D71492CF",
+                "AddrTypeCd": "BillingAddress",
+                "CountryCd": "USA"
+              }
+            ],
+            "Surname": "LiferayTest",
+            "GivenName": "Automated",
+            "OtherGivenName": "UI",
+            "TitlePrefix": "Dr.",
+            "NameSuffix": "Sr.",
+            "GenderCd": "M",
+            "BirthDt": "1988-02-02",
+            "MaritalStatusCd": "S",
+            "OccupationClassCd": "ACT",
+            "QuestionAnswer": [
+              {
+                "id": "QADRVDRV042NO",
+                "QuestionCd": "DRV04",
+                "YesNoCd": "NO",
+                "QuestionText": "licensedLastFive"
+              },
+              {
+                "id": "QADRVDRV052YES",
+                "QuestionCd": "DRV05",
+                "YesNoCd": "YES",
+                "QuestionText": "isIndiviualLicensed"
+              },
+              {
+                "id": "QADRVDRV062YES",
+                "QuestionCd": "DRV06",
+                "YesNoCd": "YES",
+                "Num": "0",
+                "QuestionAnswerExt": {
+                  "id": "Q3EB40497AAC34DF1A7E7512B49ABC2AA",
+                  "WBOverrideInfo": {
+                    "id": "W4A4CFFDFFA744BB183BA3FEC30F4910A",
+                    "WBOverrideType": "UWQ",
+                    "WBOverrideCategory": "PriorCarrier",
+                    "WBOverrideCd": "MultPriorCarrier",
+                    "WBOverrideValue": "YES"
+                  }
+                }
+              }
+            ],
+            "ContinuousInsuranceCd": "Continuous6To11Months",
+            "DriverExt": {
+              "id": "D9BE0F7F3AD96465C82F3D2514A32CA67",
+              "YouthfulInd": "0",
+              "WBIsMinor": "0",
+              "WBRiskTerm": {
+                "id": "W86DEB306F9134C6FB37F3996C30996BC",
+                "WBRiskEffectiveDt": "2022-08-18",
+                "WBRiskExpirationDt": "2023-08-18"
+              },
+              "WBDriverAge": 34,
+              "WBDriverIncidentEligiblePoints": "0",
+              "WBInexperiencedOperatorInd": 1,
+              "WBAdvantageDriverInd": "0",
+              "WBCleanRecordThreeYrInd": 1,
+              "WBCleanRecordFiveYrInd": "0",
+              "WBDriverIncidentScore": "0"
+            },
+            "DriverTypeCd": null
+          },
+          "Vehicle": {
+            "id": "V81D3BD5BF2F849C4BC546B8B2BCD7776",
+            "RatedDriverRef": "DRV2",
+            "ItemIdInfo": {
+              "id": "I573856070B0E495A8B42EDDE37EA978D",
+              "InsurerId": 1
+            },
+            "Manufacturer": "CHEVROLET",
+            "ManufacturerCd": "CHEV",
+            "Model": "CAMARO SS/CAMARO SS RS",
+            "ModelCd": "CAMARO",
+            "ModelYear": 2014,
+            "VehBodyTypeCd": "PP",
+            "Registration": {
+              "id": "RFE10E72D173C4D53B73EFCFC38024220",
+              "StateProvCd": "AZ"
+            },
+            "Horsepower": {
+              "id": "H8387939F0DE342C38135E70D018F0E75",
+              "NumUnits": 6.2
+            },
+            "VehIdentificationNumber": "1G1FS1EW1E1111111",
+            "GrossVehWeight": {
+              "id": "GC9F5D6C3EF084541A54EB6FFD0A90BF1",
+              "NumUnits": "0"
+            },
+            "InspectionInfo": {
+              "id": "I50B6D36E2DC04173A84A507A0E62A6EE",
+              "VehInspectionInfo": {
+                "id": "VA2983F67998F4DBFBCCEDDDED6C1A178",
+                "VehEquipment": [
+                  {
+                    "id": "V2B1CD156B89546F3B9DD358BA210BB83",
+                    "VehEquipmentCd": "AdaptiveHeadlights"
+                  },
+                  {
+                    "id": "V0D7BB6FA1B564B8EB071B42A8F2569A5",
+                    "VehEquipmentCd": "AutonomousOperationMode"
+                  },
+                  {
+                    "id": "VC3A64A24DDF746978257DE60304FEC9D",
+                    "VehEquipmentCd": "BackupWarning"
+                  },
+                  {
+                    "id": "VBE80727F6C7E4B3BA460FA48DEF2C77B",
+                    "VehEquipmentCd": "DriverFatigueSensing"
+                  },
+                  {
+                    "id": "VAC312261F99D489AAB75B9D2F103B12F",
+                    "VehEquipmentCd": "ForwardCrashAvoidanceWithAB"
+                  },
+                  {
+                    "id": "V3F3D6CABD14F429A87516FA618DBC9BB",
+                    "VehEquipmentCd": "LaneDepMonitoring"
+                  }
+                ]
+              }
+            },
+            "VehPerformanceCd": "H",
+            "BIPDSymbolCd": 295,
+            "MedPayPIPLiabilitySymbolCd": 490,
+            "Addr": {
+              "id": "AEC80B56ACDA44EC49360C00B84746EDC",
+              "AddrTypeCd": "GaragingAddress",
+              "Addr1": "3721 E Thomas Rd",
+              "City": "Phoenix",
+              "StateProvCd": "AZ",
+              "PostalCode": "85018-7507",
+              "CountryCd": "USA",
+              "Latitude": 33.4803,
+              "Longitude": -112.001508,
+              "County": "Maricopa County",
+              "Region": 23,
+              "AddrExt": {
+                "id": "A57676B0078FC4E15BC5F01AB2D31AB18",
+                "WBRatedZipCd": 85018,
+                "WBRatedVehicleStateProvCd": "AZ",
+                "WBAddressStandardization": {
+                  "id": "W968D290C87CB4BF5B4BDDA870E335739",
+                  "WBAddrStandardizeStreetName": "Thomas",
+                  "WBAddrStandardizeStreetTypeCd": "Rd",
+                  "WBAddrStandardizeStreetNumber": 3721,
+                  "WBConfidence": 100,
+                  "WBAddrStandardizeLeadingDirectional": "E",
+                  "WBAddrStandardizeStatus": "Accepted"
+                }
+              }
+            },
+            "Coverage": [
+              {
+                "id": "BIBI1",
+                "CoverageCd": "BI",
+                "Limit": [
+                  {
+                    "id": "LIMBIBI1BIEachPers",
+                    "FormatCurrencyAmt": {
+                      "id": "FCLIMBIBI1BIEachPers",
+                      "Amt": 100000
+                    },
+                    "LimitAppliesToCd": "BIEachPers"
+                  },
+                  {
+                    "id": "LIMBIBI1PerAcc",
+                    "FormatCurrencyAmt": {
+                      "id": "FCLIMBIBI1PerAcc",
+                      "Amt": 300000
+                    },
+                    "LimitAppliesToCd": "PerAcc"
+                  }
+                ],
+                "EffectiveDt": "2022-08-18",
+                "ExpirationDt": "2023-08-18",
+                "ProRateFactor": 1,
+                "CoverageSupplement": {
+                  "id": "C88A59FB6B40E468E806CF9B3D984F0A5",
+                  "CoverageSubCd": "BI"
+                },
+                "CoverageExt": {
+                  "id": "C2DD18D0D972D4BFD90CFE60B54C91B55",
+                  "WBOnsetOffsetPremiumInfo": {
+                    "id": "W67FCD64C572E46FF9BAE7E0B954412D0",
+                    "WBCurrentTermOnsetAmt": {
+                      "id": "W717BEA621A854199BAA0E8D9D0EDAFE0",
+                      "Amt": 282
+                    },
+                    "WBCurrentTermOffsetAmt": {
+                      "id": "WBD575DBE5E5D49A0812DDDECFA8ABCEA",
+                      "Amt": "0"
+                    }
+                  },
+                  "WBPremiumInfo": {
+                    "id": "W72DD2AF0F338486CAB46705A4D6F9CDB",
+                    "WBCurrentTermAmt": {
+                      "id": "WFFA29749C6A54222BF7B663A94C8CC62",
+                      "Amt": 282
+                    },
+                    "WBNetChangeAmt": {
+                      "id": "W8C27B0DD831040B7A336C58440CA48BB",
+                      "Amt": 282
+                    },
+                    "WBWrittenAmt": {
+                      "id": "WE007F2AD813B4B45AB4D9BE3F8B717AE",
+                      "Amt": 282
+                    },
+                    "WBPriorCurrentTermAmt": {
+                      "id": "W5260868AF57044199DC708BD2DD0E124",
+                      "Amt": "0"
+                    },
+                    "WBPriorWrittenAmt": {
+                      "id": "WE4C445D2A04D47C687DDC2DC14C3DC52",
+                      "Amt": "0"
+                    },
+                    "WBCancelAmt": {
+                      "id": "W38C9CE70241A435A862D85CC484F2380",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "PDPD1",
+                "CoverageCd": "PD",
+                "Limit": {
+                  "id": "LIMPDPD1PerAcc",
+                  "FormatCurrencyAmt": {
+                    "id": "FCLIMPDPD1PerAcc",
+                    "Amt": 15000
+                  },
+                  "LimitAppliesToCd": "PerAcc"
+                },
+                "EffectiveDt": "2022-08-18",
+                "ExpirationDt": "2023-08-18",
+                "ProRateFactor": 1,
+                "CoverageSupplement": {
+                  "id": "CB5E17E260D40448E99E6959C148DD312",
+                  "CoverageSubCd": "PD"
+                },
+                "CoverageExt": {
+                  "id": "C6DE5B771C7354F3E8C321EFD67B3ABDD",
+                  "WBOnsetOffsetPremiumInfo": {
+                    "id": "WC1FBAD45873346C18B6A2F875A8AB8A3",
+                    "WBCurrentTermOnsetAmt": {
+                      "id": "W6FCD488D9F9E490C8FB757492F9503DE",
+                      "Amt": 175
+                    },
+                    "WBCurrentTermOffsetAmt": {
+                      "id": "W9ABB04ABB0F541DDA67C35E0D66F721F",
+                      "Amt": "0"
+                    }
+                  },
+                  "WBPremiumInfo": {
+                    "id": "WFED70FAC67244D58907B4214C835012B",
+                    "WBCurrentTermAmt": {
+                      "id": "W3431144A7529466C99D2DE9FA97DEA51",
+                      "Amt": 175
+                    },
+                    "WBNetChangeAmt": {
+                      "id": "WA085231DA9EC433C9EA889450447F9B2",
+                      "Amt": 175
+                    },
+                    "WBWrittenAmt": {
+                      "id": "W884C37FB775046849C97CDFB35A8939C",
+                      "Amt": 175
+                    },
+                    "WBPriorCurrentTermAmt": {
+                      "id": "W488DED0DE7444EA78A00DE5FB3400817",
+                      "Amt": "0"
+                    },
+                    "WBPriorWrittenAmt": {
+                      "id": "WE7E84EABDBBC4FA186AFC82FF393C8B3",
+                      "Amt": "0"
+                    },
+                    "WBCancelAmt": {
+                      "id": "W40AB649E9A79477F8CF78FADE40C3CE6",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "UMUMSP1",
+                "CoverageCd": "UM",
+                "Limit": [
+                  {
+                    "id": "LIMUMUMSP1PerPerson",
+                    "FormatCurrencyAmt": {
+                      "id": "FCLIMUMUMSP1PerPerson",
+                      "Amt": 100000
+                    },
+                    "LimitAppliesToCd": "PerPerson"
+                  },
+                  {
+                    "id": "LIMUMUMSP1PerAcc",
+                    "FormatCurrencyAmt": {
+                      "id": "FCLIMUMUMSP1PerAcc",
+                      "Amt": 300000
+                    },
+                    "LimitAppliesToCd": "PerAcc"
+                  }
+                ],
+                "EffectiveDt": "2022-08-18",
+                "ExpirationDt": "2023-08-18",
+                "ProRateFactor": 1,
+                "CoverageSupplement": {
+                  "id": "CAF717B9EB0654733917E8AA268FF5F0A",
+                  "CoverageSubCd": "UMSP"
+                },
+                "CoverageExt": {
+                  "id": "CE340C3CEDCD247788BDB915DC480426C",
+                  "WBOnsetOffsetPremiumInfo": {
+                    "id": "W4A779BAE40344B36A83C0DB40996E1D2",
+                    "WBCurrentTermOnsetAmt": {
+                      "id": "W6B7E1FA2B8314F0EBA6F81C7D4E60FE9",
+                      "Amt": 55
+                    },
+                    "WBCurrentTermOffsetAmt": {
+                      "id": "WB0039F03E65848DD8998A793BECEAEE3",
+                      "Amt": "0"
+                    }
+                  },
+                  "WBPremiumInfo": {
+                    "id": "WE4591F39EDD74AC7B5E02B9BCFA0A42C",
+                    "WBCurrentTermAmt": {
+                      "id": "W93137810F9E2459094C265337F0903C7",
+                      "Amt": 55
+                    },
+                    "WBNetChangeAmt": {
+                      "id": "W6E01E93297E14959898D2BFDAC346641",
+                      "Amt": 55
+                    },
+                    "WBWrittenAmt": {
+                      "id": "W834645FF5539404E8BA4B67D3E8A4E5D",
+                      "Amt": 55
+                    },
+                    "WBPriorCurrentTermAmt": {
+                      "id": "W877D3724F42F4A288337E6D95B7BD807",
+                      "Amt": "0"
+                    },
+                    "WBPriorWrittenAmt": {
+                      "id": "WAC6AAFAA8CF548FAA12717FA912A567A",
+                      "Amt": "0"
+                    },
+                    "WBCancelAmt": {
+                      "id": "WCD4DD0FDAB314DF796BB1E2062D3B4D8",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "UNDUMUNDMSP1",
+                "CoverageCd": "UNDUM",
+                "Limit": [
+                  {
+                    "id": "LIMUNDUMUNDMSP1PerPerson",
+                    "FormatCurrencyAmt": {
+                      "id": "FCLIMUNDUMUNDMSP1PerPerson",
+                      "Amt": 100000
+                    },
+                    "LimitAppliesToCd": "PerPerson"
+                  },
+                  {
+                    "id": "LIMUNDUMUNDMSP1PerAcc",
+                    "FormatCurrencyAmt": {
+                      "id": "FCLIMUNDUMUNDMSP1PerAcc",
+                      "Amt": 300000
+                    },
+                    "LimitAppliesToCd": "PerAcc"
+                  }
+                ],
+                "EffectiveDt": "2022-08-18",
+                "ExpirationDt": "2023-08-18",
+                "ProRateFactor": 1,
+                "CoverageSupplement": {
+                  "id": "C4DB565FF1A9F4673A6ACC4EB0F731114",
+                  "CoverageSubCd": "UNDMSP"
+                },
+                "CoverageExt": {
+                  "id": "C23B29536F61248D58D4456CCC6B82D97",
+                  "WBOnsetOffsetPremiumInfo": {
+                    "id": "W55AAF843CBF4450CB20702CAB2AB8D46",
+                    "WBCurrentTermOnsetAmt": {
+                      "id": "WD7E543A3931A492C8B36B785063A00D5",
+                      "Amt": 38
+                    },
+                    "WBCurrentTermOffsetAmt": {
+                      "id": "WCF1DCEA9B9B74760857D8C5E6A4725C4",
+                      "Amt": "0"
+                    }
+                  },
+                  "WBPremiumInfo": {
+                    "id": "W2E5838EEF34241B6AE2AEBF4377758BC",
+                    "WBCurrentTermAmt": {
+                      "id": "W8527C244BD4F4431AF4A6791C53A6931",
+                      "Amt": 38
+                    },
+                    "WBNetChangeAmt": {
+                      "id": "WD5CCE769542E4772B46F3A803E5BDD83",
+                      "Amt": 38
+                    },
+                    "WBWrittenAmt": {
+                      "id": "W1E7EC26C3D3B47488A02CFF604A9D418",
+                      "Amt": 38
+                    },
+                    "WBPriorCurrentTermAmt": {
+                      "id": "W1CCCBD2118CF4353AAAB69DFD629D5A0",
+                      "Amt": "0"
+                    },
+                    "WBPriorWrittenAmt": {
+                      "id": "WD60C60D70C2F46C3AA806A394B9CB717",
+                      "Amt": "0"
+                    },
+                    "WBCancelAmt": {
+                      "id": "W37BE2C1E96014A0DA31D6F22475802A1",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "TPACAATA1",
+                "CoverageCd": "TPAC",
+                "CoverageTypeCd": "Fee",
+                "EffectiveDt": "2022-08-18",
+                "ExpirationDt": "2023-08-18",
+                "ProRateFactor": 1,
+                "CoverageSupplement": {
+                  "id": "CBB76BC5C174C4DB58379EE282B7CEFCE",
+                  "CoverageSubCd": "AATA"
+                },
+                "CoverageExt": {
+                  "id": "C4B7284BE3190420B8FBD7D5E883DEC66",
+                  "WBOnsetOffsetPremiumInfo": {
+                    "id": "W7BA7574712D148DDBD63BA9EA80D0B7B",
+                    "WBCurrentTermOnsetAmt": {
+                      "id": "W2F8DD25771D448A893A0C45B7AAE044B",
+                      "Amt": 1
+                    },
+                    "WBCurrentTermOffsetAmt": {
+                      "id": "W12DBE1B2CF1E472CB681611D3A65C10C",
+                      "Amt": "0"
+                    }
+                  },
+                  "WBPremiumInfo": {
+                    "id": "W8CB6B3FB969349209D97E16A32234F76",
+                    "WBCurrentTermAmt": {
+                      "id": "W05A72941A8074712885990A9366748F6",
+                      "Amt": 1
+                    },
+                    "WBNetChangeAmt": {
+                      "id": "WE3E1BF12159A476BBFF4241E3BD0B5BA",
+                      "Amt": 1
+                    },
+                    "WBWrittenAmt": {
+                      "id": "WCD856781DF9C41BEA5AB81551CBB9CCC",
+                      "Amt": 1
+                    },
+                    "WBPriorCurrentTermAmt": {
+                      "id": "WCBC39C890C5748A78E56FAED765F8A74",
+                      "Amt": "0"
+                    },
+                    "WBPriorWrittenAmt": {
+                      "id": "WB96A6E502A9C41DCA9A58C92BD9338D9",
+                      "Amt": "0"
+                    },
+                    "WBCancelAmt": {
+                      "id": "WE50E408530A54247927196FAE0E002D1",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              }
+            ],
+            "CreditOrSurcharge": [
+              {
+                "id": "CSVLDM1",
+                "SecondaryCd": "LDM",
+                "WBRatingAppliedInd": 1,
+                "CreditOrSurchargeExt": {
+                  "id": "CD6B7A826CC794580AAD6BC858E09647E",
+                  "WBPremiumInfo": {
+                    "id": "WEDA2D22CC8D64BDC8E54C9B11B3A0ABE",
+                    "WBCurrentTermAmt": {
+                      "id": "W437D1961566F491C91667E1223C0ADA0",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVBSM1",
+                "SecondaryCd": "BSM",
+                "WBRatingAppliedInd": 1,
+                "CreditOrSurchargeExt": {
+                  "id": "C0AA1483C91154C4ABCFB5B25A6760865",
+                  "WBPremiumInfo": {
+                    "id": "W196339D1286B473AAEB5DE28F5967E1F",
+                    "WBCurrentTermAmt": {
+                      "id": "WF525541112D941D0924CEB1E7749F479",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVFCAWB1",
+                "SecondaryCd": "FCAWB",
+                "WBRatingAppliedInd": 1,
+                "CreditOrSurchargeExt": {
+                  "id": "C37FDB64B42314778B326758797928ABF",
+                  "WBPremiumInfo": {
+                    "id": "W4EFF0B50BC604C32B62248D3680314E7",
+                    "WBCurrentTermAmt": {
+                      "id": "WECC5F85F3D824963805397A8A4A03E04",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVFCAWOB1",
+                "SecondaryCd": "FCAWOB",
+                "WBRatingAppliedInd": "0",
+                "CreditOrSurchargeExt": {
+                  "id": "C8910786DA48A4DAF96E26C6B53D649E7",
+                  "WBPremiumInfo": {
+                    "id": "W95B06867EC3747F1BD0A8BD6C32FC6DF",
+                    "WBCurrentTermAmt": {
+                      "id": "W1D4002A7D9B24F0D80A1CDB721131C27",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVAHS1",
+                "SecondaryCd": "AHS",
+                "WBRatingAppliedInd": 1,
+                "CreditOrSurchargeExt": {
+                  "id": "C5774205695EF435FB4B34EB3C6F3D775",
+                  "WBPremiumInfo": {
+                    "id": "W136EB94BF8E449D7BB80E742099D2A6D",
+                    "WBCurrentTermAmt": {
+                      "id": "W8708B47F6349456BBC52180C6EB7408B",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVAOM1",
+                "SecondaryCd": "AOM",
+                "WBRatingAppliedInd": "0",
+                "CreditOrSurchargeExt": {
+                  "id": "C8169F1E55CFE4540AF4B4D342EACAC70",
+                  "WBPremiumInfo": {
+                    "id": "WBBE88B2B3975458085CBA5141AA17848",
+                    "WBCurrentTermAmt": {
+                      "id": "WEFDAEAB58D974E0282CB17D9B34C58AC",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVBWS1",
+                "SecondaryCd": "BWS",
+                "WBRatingAppliedInd": 1,
+                "CreditOrSurchargeExt": {
+                  "id": "C2786899EF3C140699E58ADE9BF989774",
+                  "WBPremiumInfo": {
+                    "id": "W6FBB6B98C2D148988501CFF000FF7398",
+                    "WBCurrentTermAmt": {
+                      "id": "W96930242E40D418D98E4DF9FD9502604",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVDFSS1",
+                "SecondaryCd": "DFSS",
+                "WBRatingAppliedInd": 1,
+                "CreditOrSurchargeExt": {
+                  "id": "C454170FB8C3B444681DDFC50E48AF87C",
+                  "WBPremiumInfo": {
+                    "id": "WECC3575EA1CD42FB9EBECD093F6794EA",
+                    "WBCurrentTermAmt": {
+                      "id": "W5DD9F8C029414BDBBF1CD557B3B47827",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVGDSTD1",
+                "SecondaryCd": "GDSTD",
+                "WBRatingAppliedInd": "0",
+                "CreditOrSurchargeExt": {
+                  "id": "C60AD484C9AAD4205B78732C32ABB25F5",
+                  "WBPremiumInfo": {
+                    "id": "WA5589C738C2F41D88C9A308156C6ADA8",
+                    "WBCurrentTermAmt": {
+                      "id": "W104635BBDC53480F9C182EABAF2660FF",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVGRSTD1",
+                "SecondaryCd": "GRSTD",
+                "WBRatingAppliedInd": "0",
+                "CreditOrSurchargeExt": {
+                  "id": "C76AC0FAA7C5B4B348B4745442E0E81A7",
+                  "WBPremiumInfo": {
+                    "id": "W493154D1218F48AFB10CFBAC4862B641",
+                    "WBCurrentTermAmt": {
+                      "id": "WC08FAE8AC5EA487BBD56AE4D98187F69",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVRSTD1",
+                "SecondaryCd": "RSTD",
+                "WBRatingAppliedInd": "0",
+                "CreditOrSurchargeExt": {
+                  "id": "C68114817E66B485FA8B892306C0BBE75",
+                  "WBPremiumInfo": {
+                    "id": "W77F06D2899DA42C0BE7EB7318D5068D3",
+                    "WBCurrentTermAmt": {
+                      "id": "W28D79750F54942C897D804CB2528CE0D",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVMIL1",
+                "SecondaryCd": "MIL",
+                "WBRatingAppliedInd": "0",
+                "CreditOrSurchargeExt": {
+                  "id": "C973864BDE24844EA863D514CA3DA4AB6",
+                  "WBPremiumInfo": {
+                    "id": "WD98ED114C7C84752AF0192EE53BB56F6",
+                    "WBCurrentTermAmt": {
+                      "id": "W7CA56C741B814E3EB8D39334F725BEAD",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVDED1",
+                "SecondaryCd": "DED",
+                "WBRatingAppliedInd": 1,
+                "CreditOrSurchargeExt": {
+                  "id": "C56F3F0B6AB03462B87930C1108FF9BBB",
+                  "WBPremiumInfo": {
+                    "id": "W74538244D5CF4F9499761102D6D62B93",
+                    "WBCurrentTermAmt": {
+                      "id": "W6B53A9681BBD4967A3DC745E0FE98A22",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVIOS1",
+                "SecondaryCd": "IOS",
+                "WBRatingAppliedInd": 1,
+                "CreditOrSurchargeExt": {
+                  "id": "C84D671C263174FE1A8656601B3DF9E1A",
+                  "WBPremiumInfo": {
+                    "id": "WBEAC949B16CB44F096AD417AFE330C16",
+                    "WBCurrentTermAmt": {
+                      "id": "WCD3B9C23B97B44FFA437285C14C8099A",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVPU1",
+                "SecondaryCd": "PU",
+                "WBRatingAppliedInd": "0",
+                "CreditOrSurchargeExt": {
+                  "id": "C9ED6FB25B7004B7E9F9E2F61CD9FE686",
+                  "WBPremiumInfo": {
+                    "id": "WC76CE6800CC248AAB04FAC70CDAD6612",
+                    "WBCurrentTermAmt": {
+                      "id": "W12944AE0782E4C06954F61F0DC7F09D3",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVLIC1",
+                "SecondaryCd": "LIC",
+                "WBRatingAppliedInd": "0",
+                "CreditOrSurchargeExt": {
+                  "id": "C9E0ABE7C55594405A6760D14C56CE4F1",
+                  "WBPremiumInfo": {
+                    "id": "W1B059E2BE7CE41DB955CEDBB4ED39D43",
+                    "WBCurrentTermAmt": {
+                      "id": "WA1104C1C1AB94CF9A45EDEA7B78F98C3",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "CSVAVS1",
+                "SecondaryCd": "AVS",
+                "WBRatingAppliedInd": 1,
+                "CreditOrSurchargeExt": {
+                  "id": "C86B4CFA635104270B39480EBBC631D6C",
+                  "WBPremiumInfo": {
+                    "id": "WDD34913FACB74D58AB5A60765F74FFFC",
+                    "WBCurrentTermAmt": {
+                      "id": "WCD64E8445D20436C8E3D5BFB8BD75EEB",
+                      "Amt": "0"
+                    }
+                  }
+                }
+              }
+            ],
+            "ComprehensiveOTCSymbolCd": 36,
+            "CollisionSymbolCd": 49,
+            "QuestionAnswer": [
+              {
+                "id": "QAVEHVEH011NO",
+                "QuestionCd": "VEH01",
+                "YesNoCd": "NO"
+              },
+              {
+                "id": "QAVEHVEH021My Test BusinessOTHER",
+                "QuestionCd": "VEH02",
+                "YesNoCd": "OTHER",
+                "Explanation": "My Test Business"
+              }
+            ],
+            "VehicleExt": {
+              "id": "VF28CA53AEC8346F88D72B39C3B14228E",
+              "ClassCode": 1134,
+              "WBMileage": {
+                "id": "WF1807B9B89CB483DA4E5216B985AF921",
+                "WBAnnualMileageMAMCd": "D",
+                "WBRatedDrivingExposure": 8730
+              },
+              "WBISOBodyStyleDesc": "2-Door Coupe",
+              "WBFinancialResponsibilityCnt": "0",
+              "WBRiskTerm": {
+                "id": "W4D7E19616D814003ADA6AAA0207C6F3D",
+                "WBRiskEffectiveDt": "2022-08-18",
+                "WBRiskExpirationDt": "2023-08-18"
+              },
+              "WBSubtotalInfo": [
+                {
+                  "id": "WC3961E3F4C7541869E4A7BC3E0186FCA",
+                  "WBSubtotalInfoTypeCd": "CFA",
+                  "WBCurrentTermAmt": {
+                    "id": "W22E0DCE058804AF28805DFDE750BB76C",
+                    "Amt": "0"
+                  }
+                },
+                {
+                  "id": "WE2B792CECCCC4E0594594E503DA68870",
+                  "WBSubtotalInfoTypeCd": "VEH",
+                  "WBCurrentTermAmt": {
+                    "id": "W0D95338B46A447938B2CA708D50078EA",
+                    "Amt": 550
+                  }
+                }
+              ],
+              "WBVehicleAge": 8,
+              "WBThirdPartyReport": {
+                "id": "WAE2C31B72EC74A92AFCEA87C14734DA7",
+                "WBReportTypeCd": "VINMASTER",
+                "WBReportOrderStatus": "Returned"
+              },
+              "WBOnsetOffsetPremiumInfo": {
+                "id": "W622504AAD87D4C02A71F481084A6519C",
+                "WBCurrentTermOnsetAmt": {
+                  "id": "WA8497E02E01D4D55AC1C9D914E95B81F"
+                },
+                "WBCurrentTermOffsetAmt": {
+                  "id": "WC5E58B7BC29B4BCEB44A6791165385E8"
+                }
+              },
+              "WBPremiumInfo": {
+                "id": "WC72C36361A10448F828974589FB45BD6",
+                "WBCurrentTermAmt": {
+                  "id": "WB780435E684C4C618621B3A4C5A91D90",
+                  "Amt": 551
+                },
+                "WBNetChangeAmt": {
+                  "id": "W0DFB2B6E91AE4209875476784AF97C73",
+                  "Amt": 551
+                },
+                "WBWrittenAmt": {
+                  "id": "W5DD2A5D8626F4DFAB7FB3FF31F3E624D",
+                  "Amt": 551
+                },
+                "WBPriorCurrentTermAmt": {
+                  "id": "W9AD7EF57387343EA91DAB3563978D1A1",
+                  "Amt": "0"
+                },
+                "WBPriorWrittenAmt": {
+                  "id": "WA19CB3B8B12C47E48F7C43FA2D150CFD",
+                  "Amt": "0"
+                },
+                "WBCancelAmt": {
+                  "id": "W9BA5358504F6459CA495B46868FE9A00"
+                }
+              },
+              "WBPhysicalDamageOnlyInd": "0",
+              "WBCoverageDeclinedInfo": {
+                "id": "W0CD2B9D966794B928DA8CE138073661D",
+                "WBDeclinedCoverageCd": "MP",
+                "WBDeclinedCoverageTypeCd": "NR"
+              },
+              "WBCustomEquipInd": "0",
+              "WBVehicleIncidentScore": "0",
+              "WBISSClassCode": 4082,
+              "Form": [
+                {
+                  "id": "FormPP0001Q0119V81D3BD5BF2F849C4BC546B8B2BCD7776",
+                  "FormNumber": "PP0001Q",
+                  "EditionDt": "2019-01-01",
+                  "FormName": "Personal Auto Policy",
+                  "EffectiveDt": "2022-08-18",
+                  "FormExt": {
+                    "id": "F3634684938AE422E895039BEF9759786",
+                    "WBOrder": "06"
+                  }
+                },
+                {
+                  "id": "FormDC20050119V81D3BD5BF2F849C4BC546B8B2BCD7776",
+                  "FormNumber": "DC2005",
+                  "EditionDt": "2019-01-01",
+                  "FormName": "Travelnet 24 Hour Emergency Roadside Service",
+                  "EffectiveDt": "2022-08-18",
+                  "FormExt": {
+                    "id": "FD48EB006294145C4A8A847DA5ADC7D89",
+                    "WBOrder": 23
+                  }
+                },
+                {
+                  "id": "FormPP0167Q0619V81D3BD5BF2F849C4BC546B8B2BCD7776",
+                  "FormNumber": "PP0167Q",
+                  "EditionDt": "2019-06-01",
+                  "FormName": "Amendment of Policy Provisions - AZ",
+                  "EffectiveDt": "2022-08-18",
+                  "FormExt": {
+                    "id": "F256D11CB51454A22BEDA584D1B64FD4B",
+                    "WBOrder": "07"
+                  }
+                },
+                {
+                  "id": "FormPP0267Q0421V81D3BD5BF2F849C4BC546B8B2BCD7776",
+                  "FormNumber": "PP0267Q",
+                  "EditionDt": "2021-04-01",
+                  "FormName": "Termination Provisions - AZ",
+                  "EffectiveDt": "2022-08-18",
+                  "FormExt": {
+                    "id": "F3971A0424F0C4857BBA83CBC408082C2",
+                    "WBOrder": "09"
+                  }
+                },
+                {
+                  "id": "FormPP0477Q0119V81D3BD5BF2F849C4BC546B8B2BCD7776",
+                  "FormNumber": "PP0477Q",
+                  "EditionDt": "2019-01-01",
+                  "FormName": "Uninsured Motorists Coverage - AZ",
+                  "EffectiveDt": "2022-08-18",
+                  "FormExt": {
+                    "id": "FCC1EAEF682454B96BD7ED7DBC7AA434B",
+                    "WBOrder": 14
+                  }
+                },
+                {
+                  "id": "FormPP0489Q0119V81D3BD5BF2F849C4BC546B8B2BCD7776",
+                  "FormNumber": "PP0489Q",
+                  "EditionDt": "2019-01-01",
+                  "FormName": "Underinsured Motorists Coverage - AZ",
+                  "EffectiveDt": "2022-08-18",
+                  "FormExt": {
+                    "id": "FCD119F89D1114751A8F3E1D95E347C77",
+                    "WBOrder": 15
+                  }
+                }
+              ]
+            }
+          },
+          "QuestionAnswer": [
+            {
+              "id": "QAUTOAUTOP03NO",
+              "QuestionCd": "AUTOP03",
+              "YesNoCd": "NO"
+            },
+            {
+              "id": "QAUTOVEH03NO",
+              "QuestionCd": "VEH03",
+              "YesNoCd": "NO"
+            },
+            {
+              "id": "QAUTOVEH04NO",
+              "QuestionCd": "VEH04",
+              "YesNoCd": "NO"
+            }
+          ],
+          "PersAutoLineBusinessExt": {
+            "id": "P5B0BEFCEB9C5413C951C99226EB0D353",
+            "WBSubtotalInfo": {
+              "id": "W3B4AAD3044D2445FB9E837221384D6BE",
+              "WBSubtotalInfoTypeCd": "CFA",
+              "WBCurrentTermAmt": {
+                "id": "W97916C0A5ED949FA8142458FD597C1F9",
+                "Amt": "0"
+              }
+            },
+            "WBOnsetOffsetPremiumInfo": {
+              "id": "W0E51D868AA274A7AA5191438E88AA2AB",
+              "WBCurrentTermOnsetAmt": {
+                "id": "WC7945BD4BB4A45F080C8A9C3A9F79C2D"
+              },
+              "WBCurrentTermOffsetAmt": {
+                "id": "WD7507CD2650845BFBAF30DACBD747E40"
+              }
+            },
+            "WBPermissiveUseCnt": "0",
+            "WBPremiumInfo": {
+              "id": "W6920C7F2CB5941DB9F4E3A580B34D95B",
+              "WBCurrentTermAmt": {
+                "id": "W07D8DE30776F407FA2BFD50AFD8161B5",
+                "Amt": 571
+              },
+              "WBNetChangeAmt": {
+                "id": "WE375F6707D4742629F22CE07A20D6F39",
+                "Amt": 571
+              },
+              "WBWrittenAmt": {
+                "id": "W262D4980B9694B879CA3123AD7BAD822",
+                "Amt": 571
+              },
+              "WBPriorCurrentTermAmt": {
+                "id": "W0657E03924EA471FA154DBA553983084",
+                "Amt": "0"
+              },
+              "WBPriorWrittenAmt": {
+                "id": "W946607836C9A424BA56EDBCBB27E227D",
+                "Amt": "0"
+              },
+              "WBCancelAmt": {
+                "id": "W7AD2007F48B04D008E5448EED660C7DC"
+              }
+            },
+            "WBAATAFeeCnt": 1,
+            "WBRiskTerm": {
+              "id": "WD5D8ECEF02EE472F991FAB4B32B30864",
+              "WBRiskEffectiveDt": "2022-08-18",
+              "WBRiskExpirationDt": "2023-08-18"
+            }
+          }
+        },
+        "PolicyExt": {
+          "id": "PDD6F49C044CE46BEBD64F53E641ABE29",
+          "AutoCompositionFactorCd": "P",
+          "HighestAdvantageDriverPointValueInHousehold": "0",
+          "WBTransactionStatusDesc": "Committed",
+          "WBQuoteStatusDesc": "Issued",
+          "CreditOrSurcharge": [
+            {
+              "id": "CSPPIF",
+              "SecondaryCd": "PIF",
+              "WBRatingAppliedInd": "0",
+              "CreditOrSurchargeExt": {
+                "id": "C2813FD33078248ABAD1CADABE4D518E6",
+                "WBPremiumInfo": {
+                  "id": "W25C6899AFD414C5094E4BF75DA31EDEA",
+                  "WBCurrentTermAmt": {
+                    "id": "WBB5499D4E43941C19D9BF7DD987F2476",
+                    "Amt": "0"
+                  }
+                }
+              }
+            },
+            {
+              "id": "CSPPPD",
+              "SecondaryCd": "PPD",
+              "WBRatingAppliedInd": "0",
+              "CreditOrSurchargeExt": {
+                "id": "C25AEC0507E01401B8DC63B34D90DDCB9",
+                "WBPremiumInfo": {
+                  "id": "WEF113FA1FDE248EDA70DD07EC0865206",
+                  "WBCurrentTermAmt": {
+                    "id": "WEBA7D2571D19429D9C82B6E274174284",
+                    "Amt": "0"
+                  }
+                }
+              }
+            },
+            {
+              "id": "CSPINSCRA",
+              "SecondaryCd": "INSCRA",
+              "WBRatingAppliedInd": 1,
+              "CreditOrSurchargeExt": {
+                "id": "C910C3EC82E77426CA32DD68583837E77",
+                "WBPremiumInfo": {
+                  "id": "WCBF311629E4D46279143BF18F971A299",
+                  "WBCurrentTermAmt": {
+                    "id": "W01C854756EE2461DBA352F645E95702C",
+                    "Amt": "0"
+                  }
+                }
+              }
+            },
+            {
+              "id": "CSPHCD",
+              "SecondaryCd": "HCD",
+              "WBRatingAppliedInd": "0",
+              "CreditOrSurchargeExt": {
+                "id": "CBE8EF554814B4783B22880AD44D7E5EF",
+                "WBPremiumInfo": {
+                  "id": "W4531ACA195A14BE3BBF1F950B3975B20",
+                  "WBCurrentTermAmt": {
+                    "id": "WAB8BAF9E741540F89A46B03F812DA9D1",
+                    "Amt": "0"
+                  }
+                }
+              }
+            }
+          ],
+          "WBHouseholdCompositionInd": "0",
+          "WBSubtotalInfo": [
+            {
+              "id": "W46DF4496C30C4D40A9EC12D51E23F241",
+              "WBSubtotalInfoTypeCd": "CFA",
+              "WBCurrentTermAmt": {
+                "id": "WF0C974B65D9A47D5BFB4837CC6E31BFB",
+                "Amt": "0"
+              }
+            },
+            {
+              "id": "W9BFB35CAE24541CFA2D6ADF38DD1DAF4",
+              "WBSubtotalInfoTypeCd": "PIFD",
+              "WBCurrentTermAmt": {
+                "id": "W9576E26626B2481983B0F8F94B9E4D72",
+                "Amt": 561
+              }
+            },
+            {
+              "id": "WFA67FC0DD1FE4E10B89C40FBD140D82E",
+              "WBSubtotalInfoTypeCd": "PIFND",
+              "WBCurrentTermAmt": {
+                "id": "W72D100E466114951995B82AA293EA6F7",
+                "Amt": "0"
+              }
+            }
+          ],
+          "WBThirdPartyReport": {
+            "id": "W6A4C06B46EB843AF9990AC1E0DD48F67",
+            "WBReportTypeCd": "APD",
+            "WBReportOrderDt": "2021-08-18",
+            "WBReportOrderStatus": "No Hit",
+            "WBReportExpirationDt": "2021-11-16"
+          },
+          "WBPolicyAge": 1,
+          "WBAssocGroupType": "ASSOC",
+          "WBOnsetOffsetPremiumInfo": {
+            "id": "WA77DD285534641D38A7E1A472E2B7434",
+            "WBCurrentTermOnsetAmt": {
+              "id": "WE6FE71770A8542C9ADADD1E6EEF55DA7"
+            },
+            "WBCurrentTermOffsetAmt": {
+              "id": "W40A83B954DEF440DBF5639053AC74E76"
+            }
+          },
+          "WBPremiumInfo": {
+            "id": "WB4B020D0505743239A8006D955F65B27",
+            "WBCurrentTermAmt": {
+              "id": "W3112C5D340BB4A71A73D15D8D9C49E01",
+              "Amt": 571
+            },
+            "WBNetChangeAmt": {
+              "id": "WEE634D2BA27943038570264289EE4F14",
+              "Amt": 571
+            },
+            "WBWrittenAmt": {
+              "id": "W7C9928A41540425194FC01B17448F8D2",
+              "Amt": 571
+            },
+            "WBPriorCurrentTermAmt": {
+              "id": "WDBCEB12B25B546D4BDC8E658DCA07745",
+              "Amt": "0"
+            },
+            "WBPriorWrittenAmt": {
+              "id": "W4774874E37014281B7666C507E0A5B2B",
+              "Amt": "0"
+            },
+            "WBCancelAmt": {
+              "id": "WDF7526D3E02C4881A13CCB33A9FC5905"
+            }
+          },
+          "WBPriorPolicyCnt": 2,
+          "WBPolicyIssue": {
+            "id": "W611DD9DE9ADE4D5A8FB95B31F20B8D5A",
+            "WBPolicyIssueCd": "R"
+          },
+          "WBPolicyInceptionDateInfo": {
+            "id": "WAD0B6EEC9904461E858D930F7E41E80C",
+            "WBPolicyUWInceptionDt": "2021-08-18",
+            "WBPolicyUWDtOverrideInd": "0",
+            "WBPolicyUWDtOverrideReason": null
+          },
+          "WBPolicyTenureAge": 1,
+          "WBGroupAssocName": "Dentists",
+          "WBISSTravelNetClassCode": 4082,
+          "LastUpdatedByUser": "Test PL",
+          "IssuedByUser": "Test PL"
+        },
+        "Form": [
+          {
+            "id": "FormDC877CC0421P2952F1FC6DD448028FF8B0E8A3B6B625",
+            "FormNumber": "DC877CC",
+            "EditionDt": "2021-04-01",
+            "FormName": "Consumer Report Disclosure Notice",
+            "EffectiveDt": "2022-08-18",
+            "FormExt": {
+              "id": "F4CEBE438C2F949F9A8E54E7778F106F7",
+              "WBOrder": "06"
+            }
+          },
+          {
+            "id": "FormDC21770119P2952F1FC6DD448028FF8B0E8A3B6B625",
+            "FormNumber": "DC2177",
+            "EditionDt": "2019-01-01",
+            "FormName": "Membership and Voting Rights Notice",
+            "EffectiveDt": "2022-08-18",
+            "FormExt": {
+              "id": "F92FD8B2379DC41649544058CB02FF123",
+              "WBOrder": "07"
+            }
+          },
+          {
+            "id": "FormDC2490119P2952F1FC6DD448028FF8B0E8A3B6B625",
+            "FormNumber": "DC249",
+            "EditionDt": "2019-01-01",
+            "FormName": "Coordination of Deductible Clause",
+            "EffectiveDt": "2022-08-18",
+            "FormExt": {
+              "id": "FF489F5F7A56C42E18A99CE0F7886E15C",
+              "WBOrder": "08"
+            }
+          },
+          {
+            "id": "FormDC11880119P2952F1FC6DD448028FF8B0E8A3B6B625",
+            "FormNumber": "DC1188",
+            "EditionDt": "2019-01-01",
+            "FormName": "West Bend Privacy Statement",
+            "EffectiveDt": "2022-08-18",
+            "FormExt": {
+              "id": "FE8C68C75D6B44F49B00CB560BF1DAE53",
+              "WBOrder": "09"
+            }
+          },
+          {
+            "id": "FormDC14910119P2952F1FC6DD448028FF8B0E8A3B6B625",
+            "FormNumber": "DC1491",
+            "EditionDt": "2019-01-01",
+            "FormName": "Payment Options and Billing Information",
+            "EffectiveDt": "2022-08-18",
+            "FormExt": {
+              "id": "F4CE0C11623D341C88902F05F8940F73C",
+              "WBOrder": 10
+            }
+          }
+        ],
+        "Status": "InForce"
+      }
+    }
+  }
+

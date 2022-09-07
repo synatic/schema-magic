@@ -379,6 +379,22 @@ describe('Schema Magic', function () {
             assert.deepEqual(SchemaMagic.generateSchemaFromJSON(false), {type: 'boolean'}, 'Invalid schema generate');
         });
 
+        it('generate a schema with array or object', function () {
+            assert.deepEqual(SchemaMagic.generateSchemaFromJSON(null), {type: 'null'}, 'Invalid schema generate');
+            assert.deepEqual(SchemaMagic.generateSchemaFromJSON('abc'), {type: 'string',stringLength:3}, 'Invalid schema generate');
+            assert.deepEqual(SchemaMagic.generateSchemaFromJSON(1), {type: 'integer'}, 'Invalid schema generate');
+            assert.deepEqual(
+                SchemaMagic.generateSchemaFromJSON(new Date()),
+                {
+                    type: 'string',
+                    format: 'date-time',
+                },
+                'Invalid schema generate'
+            );
+            assert.deepEqual(SchemaMagic.generateSchemaFromJSON(1.2), {type: 'number'}, 'Invalid schema generate');
+            assert.deepEqual(SchemaMagic.generateSchemaFromJSON(false), {type: 'boolean'}, 'Invalid schema generate');
+        });
+
         it('generate a schema from mongo', function () {
             assert.deepEqual(
                 SchemaMagic.generateSchemaFromJSON($mongoId()),

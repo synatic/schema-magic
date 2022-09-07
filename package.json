@@ -1,6 +1,6 @@
 {
   "name": "@synatic/schema-magic",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "JSON Schema Utilities",
   "main": "index.js",
   "files": [
@@ -49,15 +49,15 @@
     "bson-objectid": "2.0.3",
     "check-types": "11.1.2",
     "clone-deep": "4.0.1",
-    "cron-parser": "4.4.0",
-    "jsonpath-plus": "6.0.1",
-    "moment": "2.29.3",
-    "moment-timezone": "0.5.34",
+    "cron-parser": "4.6.0",
+    "jsonpath-plus": "7.2.0",
+    "moment": "2.29.4",
+    "moment-timezone": "0.5.37",
     "underscore": "1.13.4",
     "underscore.string": "3.3.6"
   },
   "devDependencies": {
-    "eslint": "^8.17.0",
+    "eslint": "8.22.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.5.0",
     "mocha": "^10.0.0",
