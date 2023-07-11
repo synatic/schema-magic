@@ -300,6 +300,39 @@ describe('Schema Magic', function () {
                     required: false,
                 },
             ];
+            const newOutput = [
+                {
+                    path: 'val1',
+                    type: 'integer',
+                    format: undefined,
+                    isArray: false,
+                    required: false,
+                },
+                {
+                    path: 'val2',
+                    type: 'array',
+                    format: undefined,
+                    isArray: true,
+                    required: false,
+                },
+                {
+                    path: 'val2.n.a',
+                    type: 'number',
+                    format: undefined,
+                    isArray: false,
+                    inArray: true,
+                    required: false,
+                },
+                {
+                    path: 'val2.n.b',
+                    type: 'string',
+                    format: 'date-time',
+                    isArray: false,
+                    inArray: true,
+                    required: false,
+                },
+            ];
+            console.log(newOutput);
             assert.deepEqual(SchemaMagic.flattenSchema(schema), output, 'Invalid flatten');
         });
     });
@@ -365,7 +398,7 @@ describe('Schema Magic', function () {
     describe('JSON Generate', function () {
         it('generate a simple schema', function () {
             assert.deepEqual(SchemaMagic.generateSchemaFromJSON(null), {type: 'null'}, 'Invalid schema generate');
-            assert.deepEqual(SchemaMagic.generateSchemaFromJSON('abc'), {type: 'string',stringLength:3}, 'Invalid schema generate');
+            assert.deepEqual(SchemaMagic.generateSchemaFromJSON('abc'), {type: 'string', stringLength: 3}, 'Invalid schema generate');
             assert.deepEqual(SchemaMagic.generateSchemaFromJSON(1), {type: 'integer'}, 'Invalid schema generate');
             assert.deepEqual(
                 SchemaMagic.generateSchemaFromJSON(new Date()),
@@ -434,7 +467,7 @@ describe('Schema Magic', function () {
                     },
                     name: {
                         type: 'string',
-                        stringLength:16
+                        stringLength: 16,
                     },
                     price: {
                         type: 'number',
@@ -443,7 +476,7 @@ describe('Schema Magic', function () {
                         type: 'array',
                         items: {
                             type: 'string',
-                            stringLength:4
+                            stringLength: 4,
                         },
                     },
                     dimensions: {
