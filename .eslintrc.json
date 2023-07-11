@@ -13,7 +13,7 @@
     "max-len": ["off"],
     "no-prototype-builtins": "off",
     "require-jsdoc": [
-      "warn",
+      "off",
       {
         "require": {
           "FunctionDeclaration": true,
