@@ -332,7 +332,7 @@ describe('Schema Magic', function () {
                     required: false,
                 },
             ];
-            console.log(newOutput);
+
             assert.deepEqual(SchemaMagic.flattenSchema(schema), output, 'Invalid flatten');
         });
     });
@@ -398,7 +398,14 @@ describe('Schema Magic', function () {
     describe('JSON Generate', function () {
         it('generate a simple schema', function () {
             assert.deepEqual(SchemaMagic.generateSchemaFromJSON(null), {type: 'null'}, 'Invalid schema generate');
-            assert.deepEqual(SchemaMagic.generateSchemaFromJSON('abc'), {type: 'string', stringLength: 3}, 'Invalid schema generate');
+            assert.deepEqual(
+                SchemaMagic.generateSchemaFromJSON('abc'),
+                {
+                    type: 'string',
+                    stringLength: 3,
+                },
+                'Invalid schema generate'
+            );
             assert.deepEqual(SchemaMagic.generateSchemaFromJSON(1), {type: 'integer'}, 'Invalid schema generate');
             assert.deepEqual(
                 SchemaMagic.generateSchemaFromJSON(new Date()),
@@ -643,6 +650,14 @@ describe('Schema Magic', function () {
             const result = {
                 type: 'number',
             };
+            assert.deepEqual(SchemaMagic.mergeSchemas(schemas), result, 'Invalid schema merge');
+        });
+
+        it('should merge a simple schema with date-time fields', function () {
+            const schemas = [{type: 'string', format: 'date-time'}, {type: 'string'}];
+
+            const result = {type: 'string', format: 'date-time'};
+
             assert.deepEqual(SchemaMagic.mergeSchemas(schemas), result, 'Invalid schema merge');
         });
 
