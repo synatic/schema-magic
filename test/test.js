@@ -300,38 +300,6 @@ describe('Schema Magic', function () {
                     required: false,
                 },
             ];
-            const newOutput = [
-                {
-                    path: 'val1',
-                    type: 'integer',
-                    format: undefined,
-                    isArray: false,
-                    required: false,
-                },
-                {
-                    path: 'val2',
-                    type: 'array',
-                    format: undefined,
-                    isArray: true,
-                    required: false,
-                },
-                {
-                    path: 'val2.n.a',
-                    type: 'number',
-                    format: undefined,
-                    isArray: false,
-                    inArray: true,
-                    required: false,
-                },
-                {
-                    path: 'val2.n.b',
-                    type: 'string',
-                    format: 'date-time',
-                    isArray: false,
-                    inArray: true,
-                    required: false,
-                },
-            ];
 
             assert.deepEqual(SchemaMagic.flattenSchema(schema), output, 'Invalid flatten');
         });
