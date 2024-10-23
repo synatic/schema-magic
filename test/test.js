@@ -782,7 +782,7 @@ describe('Schema Magic', function () {
         });
     });
 
-    describe('validate', function () {
+    describe('Validate', function () {
         it('should throw argument missing when document not specified', function () {
             assert.throws(
                 function () {
@@ -2066,7 +2066,7 @@ describe('Schema Magic', function () {
         });
     });
 
-    describe('normalize schema', function () {
+    describe('Normalize Schema', function () {
         it('should throw argument missing when schema not specified', function () {
             assert.throws(
                 function () {
@@ -2413,7 +2413,7 @@ describe('Schema Magic', function () {
         });
     });
 
-    describe('custom formatters', function () {
+    describe('Custom Formatters', function () {
         it('check a valid objectid', function () {
             const invalid = SchemaMagic.validate(
                 {
@@ -2481,10 +2481,27 @@ describe('Schema Magic', function () {
             assert(!invalid, 'Invalid cron validate');
         });
 
-        it('check an invalid cron', function () {
+        it('check an invalid cron - 1', function () {
             const invalid = SchemaMagic.validate(
                 {
                     val: '0 0 * * x x x',
+                },
+                {
+                    type: 'object',
+                    properties: {
+                        val: {type: 'string', format: 'cron'},
+                    },
+                    required: ['val'],
+                }
+            );
+
+            assert(invalid, 'Invalid cron validate');
+        });
+
+        it('check an invalid cron - 2', function () {
+            const invalid = SchemaMagic.validate(
+                {
+                    val: '0 0 *  ',
                 },
                 {
                     type: 'object',

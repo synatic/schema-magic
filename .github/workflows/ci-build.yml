@@ -1,4 +1,4 @@
-name: "Build"
+name: "Build & Test"
 
 on:
   push:
@@ -13,18 +13,22 @@ concurrency:
 
 jobs:
   build:
-    name: Build
+    name: Build & Test
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
-      # Skip post-install scripts here, as a malicious
-      # script could steal NODE_AUTH_TOKEN.
+
       - name: Install NPM dependencies
         run: npm install --ignore-scripts
 
@@ -33,22 +37,6 @@ jobs:
 
       - name: Run tests
         run: npm run test-ci
-
-  pack:
-    name: NPM Pack
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          registry-url: https://registry.npmjs.org/
-      # Skip post-install scripts here, as a malicious
-      # script could steal NODE_AUTH_TOKEN.
-      - name: Install NPM dependencies
-        run: npm install --ignore-scripts --production
 
       - name: Run NPM pack
         run: npm pack
