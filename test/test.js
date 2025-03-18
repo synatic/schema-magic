@@ -1854,8 +1854,12 @@ describe('Schema Magic', function () {
         it('should correctly validate an added format', function () {
             const validator = new SchemaMagic.Validator({
                 upper: function (data) {
-                    if (!data) return true;
-                    if (data.toString().toUpperCase() !== data.toString()) return false;
+                    if (!data) {
+                        return true;
+                    }
+                    if (data.toString().toUpperCase() !== data.toString()) {
+                        return false;
+                    }
                     return true;
                 },
             });
@@ -1896,7 +1900,9 @@ describe('Schema Magic', function () {
             const validator = new SchemaMagic.Validator(null, {
                 test: {
                     validate: function (schema, data) {
-                        if (!data) return true;
+                        if (!data) {
+                            return true;
+                        }
                         return data === 'xxx';
                     },
                     metaSchema: {type: 'boolean'},

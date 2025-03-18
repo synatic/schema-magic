@@ -9,6 +9,8 @@
   ],
   "scripts": {
     "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "lint-errors": "eslint . --quiet",
     "prettier": "prettier . --write",
     "test": "mocha --reporter spec --bail --check-leaks test/",
     "test-ci": "nyc --reporter text-summary mocha -- --reporter spec --check-leaks test/",
@@ -42,6 +44,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
+    "@synatic/eslint-config-synatic-node": "^2.0.0",
     "@synatic/json-magic": "^1.1.0",
     "@synatic/type-magic": "^1.0.3",
     "ajv": "6.12.6",
