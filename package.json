@@ -1,11 +1,13 @@
 {
   "name": "@synatic/schema-magic",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "JSON Schema Utilities",
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
-    "lib/",
-    "index.js"
+    "lib/**/*",
+    "*.js",
+    "*.d.ts"
   ],
   "scripts": {
     "lint": "eslint .",
@@ -44,7 +46,6 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@synatic/eslint-config-synatic-node": "^2.0.0",
     "@synatic/json-magic": "^1.1.0",
     "@synatic/type-magic": "^1.0.3",
     "ajv": "6.12.6",
@@ -60,6 +61,8 @@
     "underscore.string": "3.3.6"
   },
   "devDependencies": {
+    "@synatic/eslint-config-synatic-node": "^2.0.0",
+    "@types/mocha": "^10.0.10",
     "eslint": "^8.17.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^9.1.0",
