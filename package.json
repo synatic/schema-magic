@@ -57,11 +57,11 @@
     "underscore.string": "3.3.6"
   },
   "devDependencies": {
-    "eslint": "^8.17.0",
+    "eslint": "^8.57.1",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^9.1.0",
     "mocha": "^10.7.3",
-    "nyc": "^17.0.0",
+    "nyc": "^17.1.0",
     "prettier": "^3.3.2"
   }
 }
