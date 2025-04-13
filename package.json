@@ -48,8 +48,8 @@
   "dependencies": {
     "@synatic/json-magic": "^1.1.0",
     "@synatic/type-magic": "^1.0.3",
-    "ajv": "6.12.6",
-    "ajv-keywords": "3.5.2",
+    "ajv": "8.17.1",
+    "ajv-keywords": "5.1.0",
     "bson-objectid": "2.0.4",
     "check-types": "11.2.3",
     "clone-deep": "4.0.1",
