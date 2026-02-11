@@ -402,6 +402,17 @@ describe('Schema Magic', function () {
             assert.deepEqual(SchemaMagic.generateSchemaFromJSON(Buffer.from('abc')), {type: 'string'}, 'Invalid schema generate');
         });
 
+        it('generate a schema for empty array should default to array of strings', function () {
+            assert.deepEqual(
+                SchemaMagic.generateSchemaFromJSON([]),
+                {
+                    type: 'array',
+                    items: {type: 'string'},
+                },
+                'Empty array should default to array of strings'
+            );
+        });
+
         it('generate a complex schema', function () {
             const obj = {
                 id: 2,
