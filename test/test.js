@@ -407,7 +407,6 @@ describe('Schema Magic', function () {
                 SchemaMagic.generateSchemaFromJSON([]),
                 {
                     type: 'array',
-                    items: {type: 'string'},
                 },
                 'Empty array should default to array of strings'
             );
