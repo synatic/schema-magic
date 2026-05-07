@@ -42,4 +42,4 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Run NPM publish
-        run: npm publish --access public
+        run: npm publish --access public --tag v2

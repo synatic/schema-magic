@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/synatic/schema-magic.git"
+    "url": "git+https://github.com/synatic/schema-magic.git"
   },
   "keywords": [
     "json"
