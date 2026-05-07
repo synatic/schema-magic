@@ -22,6 +22,8 @@ describe('Schema Magic', function () {
                         format: undefined,
                         isArray: false,
                         required: false,
+                        field: undefined,
+                        paths: [],
                     },
                 ],
                 'Invalid flatten'
@@ -37,6 +39,8 @@ describe('Schema Magic', function () {
                         type: 'object',
                         isArray: false,
                         required: false,
+                        field: undefined,
+                        paths: [],
                     },
                 ],
                 'Invalid flatten'
@@ -59,6 +63,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: false,
+                    field: 'val1',
+                    paths: ['val1'],
                 },
                 {
                     path: 'val2',
@@ -66,6 +72,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: false,
+                    field: 'val2',
+                    paths: ['val2'],
                 },
             ];
             assert.deepEqual(SchemaMagic.flattenSchema(schema), output, 'Invalid flatten');
@@ -88,6 +96,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: true,
+                    field: 'val1',
+                    paths: ['val1'],
                 },
                 {
                     path: 'val2',
@@ -95,6 +105,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: false,
+                    field: 'val2',
+                    paths: ['val2'],
                 },
             ];
             assert.deepEqual(SchemaMagic.flattenSchema(schema), output, 'Invalid flatten');
@@ -122,6 +134,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: false,
+                    field: 'val1',
+                    paths: ['val1'],
                 },
                 {
                     path: 'val2.a',
@@ -129,6 +143,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: false,
+                    field: 'a',
+                    paths: ['val2', 'a'],
                 },
                 {
                     path: 'val2.b',
@@ -136,6 +152,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: false,
+                    field: 'b',
+                    paths: ['val2', 'b'],
                 },
             ];
             assert.deepEqual(SchemaMagic.flattenSchema(schema), output, 'Invalid flatten');
@@ -163,6 +181,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: false,
+                    field: 'val1',
+                    paths: ['val1'],
                 },
                 {
                     path: 'val2.a',
@@ -171,6 +191,8 @@ describe('Schema Magic', function () {
                     isArray: false,
                     required: false,
                     displayOptions: {sequence: 1},
+                    field: 'a',
+                    paths: ['val2', 'a'],
                 },
                 {
                     path: 'val2.b',
@@ -179,6 +201,8 @@ describe('Schema Magic', function () {
                     isArray: false,
                     required: false,
                     displayOptions: {sequence: 1},
+                    field: 'b',
+                    paths: ['val2', 'b'],
                 },
             ];
             assert.deepEqual(SchemaMagic.flattenSchema(schema, {additionalProperties: ['displayOptions']}), output, 'Invalid flatten');
@@ -207,6 +231,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: false,
+                    field: 'val1',
+                    paths: ['val1'],
                 },
                 {
                     path: 'val2.a',
@@ -214,6 +240,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: true,
+                    field: 'a',
+                    paths: ['val2', 'a'],
                 },
                 {
                     path: 'val2.b',
@@ -221,6 +249,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: true,
+                    field: 'b',
+                    paths: ['val2', 'b'],
                 },
             ];
             assert.deepEqual(SchemaMagic.flattenSchema(schema), output, 'Invalid flatten');
@@ -247,6 +277,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: false,
+                    field: 'val1',
+                    paths: ['val1'],
                 },
                 {
                     path: 'val2.n',
@@ -254,6 +286,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: true,
                     required: false,
+                    field: 'n',
+                    paths: ['val2', 'n'],
                 },
             ];
             assert.deepEqual(SchemaMagic.flattenSchema(schema), output, 'Invalid flatten');
@@ -284,6 +318,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: false,
                     required: false,
+                    field: 'val1',
+                    paths: ['val1'],
                 },
                 {
                     path: 'val2.n.a',
@@ -291,6 +327,8 @@ describe('Schema Magic', function () {
                     format: undefined,
                     isArray: true,
                     required: false,
+                    field: 'a',
+                    paths: ['val2', 'n', 'a'],
                 },
                 {
                     path: 'val2.n.b',
@@ -298,10 +336,27 @@ describe('Schema Magic', function () {
                     format: 'date-time',
                     isArray: true,
                     required: false,
+                    field: 'b',
+                    paths: ['val2', 'n', 'b'],
                 },
             ];
 
             assert.deepEqual(SchemaMagic.flattenSchema(schema), output, 'Invalid flatten');
+        });
+
+        it('should extract the paths and fields', function () {
+            const schema = SchemaMagic.generateSchemaFromJSON({
+                POL: {
+                    CK: {'POL/CK': 1, '# EMP.': 1},
+                    objArray: [{'POL/CK': 1}],
+                    emptyArray: [],
+                    emptyObjectArray: [{}],
+                    emptyObject: {},
+                },
+            });
+            const flat = SchemaMagic.flattenSchema(schema, {format: 'dot', arrayItemIndicator: '<index>'});
+            assert.deepEqual(flat[1].paths, ['POL', 'CK', '# EMP.']);
+            assert.deepEqual(flat[1].field, '# EMP.');
         });
     });
 

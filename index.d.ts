@@ -36,6 +36,7 @@ export interface FlattenedSchemaField {
 export interface SchemaFlattenOptions {
     format?: 'path' | 'dot';
     additionalProperties?: string[];
+    arrayItemIndicator?: string;
 }
 
 export interface SchemaSQLOptions {
