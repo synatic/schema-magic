@@ -1,6 +1,6 @@
 {
   "name": "@synatic/schema-magic",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "JSON Schema Utilities",
   "main": "index.js",
   "types": "index.d.ts",

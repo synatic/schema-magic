@@ -303,6 +303,26 @@ describe('Schema Magic', function () {
 
             assert.deepEqual(SchemaMagic.flattenSchema(schema), output, 'Invalid flatten');
         });
+
+        it('should extract the paths and fields', function () {
+            const schema = SchemaMagic.generateSchemaFromJSON({
+                POL: {
+                    CK: {'POL/CK': 1, '# EMP.': 1},
+                    objArray: [{'POL/CK': 1}],
+                    emptyArray: [],
+                    emptyObjectArray: [{}],
+                    emptyObject: {},
+                },
+            });
+            const flat = SchemaMagic.flattenSchema(schema, {
+                format: 'dot',
+                arrayItemIndicator: '<index>',
+                includePaths: true,
+                includeField: true,
+            });
+            assert.deepEqual(flat[1].paths, ['POL', 'CK', '# EMP.']);
+            assert.deepEqual(flat[1].field, '# EMP.');
+        });
     });
 
     describe('Generate SQL Table', function () {
