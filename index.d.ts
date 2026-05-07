@@ -38,6 +38,8 @@ export interface SchemaFlattenOptions {
     format?: 'path' | 'dot';
     additionalProperties?: string[];
     arrayItemIndicator?: string;
+    includeField?: boolean;
+    includePaths?: boolean;
 }
 
 export interface SchemaSQLOptions {
