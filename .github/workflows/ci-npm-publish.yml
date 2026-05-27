@@ -15,9 +15,11 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Check out repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org/
@@ -25,18 +27,23 @@ jobs:
       # script could steal NODE_AUTH_TOKEN.
       - name: Install NPM dependencies
         run: npm install --ignore-scripts
+      - name: Audit packages
+        run: npm audit --audit-level=high --omit=dev
       - name: Run linting
         run: npm run lint
 
   publish-npm:
     name: NPM Publish
     needs: build
+    environment: npm-publish
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@6
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org/
