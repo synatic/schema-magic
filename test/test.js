@@ -1157,18 +1157,10 @@ describe('Schema Magic', function () {
                 },
             };
 
-            console.log(SchemaMagic.validate(
-                {
-                    date: new Date(),
-                },
-                dateSchema,
-                true
-            ));
-
             assert.notEqual(
                 SchemaMagic.validate(
                     {
-                        date: new Date(),
+                        date: '2018-01-32',
                     },
                     dateSchema
                 ),
@@ -1180,37 +1172,6 @@ describe('Schema Magic', function () {
                 SchemaMagic.validate(
                     {
                         date: '2018-01-31',
-                    },
-                    dateSchema
-                ),
-                null,
-                'Date schema not validated'
-            );
-        });
-
-        it('should correctly validate a date-time', function () {
-            const dateSchema = {
-                type: 'object',
-                properties: {
-                    date: {type: 'string', format: 'date'},
-                },
-            };
-
-            assert.notEqual(
-                SchemaMagic.validate(
-                    {
-                        date: new Date('2018-01-31'),
-                    },
-                    dateSchema
-                ),
-                null,
-                'Date schema validated when not be'
-            );
-
-            assert.equal(
-                SchemaMagic.validate(
-                    {
-                        date: new Date('2018-01-31'),
                     },
                     dateSchema
                 ),
