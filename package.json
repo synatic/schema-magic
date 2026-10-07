@@ -1,6 +1,6 @@
 {
   "name": "@synatic/schema-magic",
-  "version": "3.0.3",
+  "version": "3.1.0",
   "description": "JSON Schema Utilities",
   "main": "index.js",
   "types": "index.d.ts",
@@ -54,9 +54,9 @@
     "check-types": "11.2.3",
     "clone-deep": "4.0.1",
     "cron-parser": "5.10.1",
-    "jsonpath-plus": "10.4.0",
+    "jsonpath-plus": "11.2.0",
     "moment": "2.31.0",
-    "moment-timezone": "0.6.4",
+    "moment-timezone": "0.6.5",
     "underscore": "1.13.8",
     "underscore.string": "3.3.6"
   },
